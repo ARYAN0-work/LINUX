@@ -16,14 +16,6 @@ Initializes hardware
 (Screen, Keyboard, Memory)
 ```
 
-## Responsibilities
-
-- Starts immediately after the computer is powered on.
-- Performs the **Power-On Self-Test (POST)**.
-- Detects and initializes hardware devices.
-- Checks the CPU, RAM, keyboard, display, and storage devices.
-- Finds a bootable device (HDD, SSD, USB, etc.).
-- Loads the boot loader from the selected boot device.
 
 ## Power-On Self-Test (POST)
 
@@ -38,16 +30,6 @@ Examples:
 - Storage devices
 
 If a problem is found, the BIOS may display an error message or emit beep codes.
-
-## In Simple Words
-
-Think of the **BIOS** as the **manager who prepares a factory before workers begin**.
-
-- You press the power button.
-- BIOS wakes up.
-- It checks that all hardware is working.
-- It prepares the computer to start.
-- It then hands control to the **Boot Loader**, which continues the boot process.
 
 ## Master Boot Record (MBR) and Boot Loader
 
@@ -211,14 +193,6 @@ Linux Kernel   initramfs
      Linux Userspace Starts
 ```
 
-### In Simple Words
-
-Think of **GRUB** as a project manager starting a factory.
-
-- It hires the **Kernel** (the boss).
-- It also brings a **toolbox (initramfs)** with all the temporary tools needed to begin work.
-- Once the real factory is ready (root filesystem), the toolbox is thrown away.
-- The boss (Kernel) then hires the first employee (**systemd/init**) who starts every other service on the system.
 
 ### What is Inside initramfs?
 

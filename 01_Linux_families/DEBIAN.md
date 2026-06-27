@@ -63,7 +63,7 @@ Linux Kernel
 
 ## Additional Key Facts About the Debian Family
 
-- **Debian** is the upstream distribution for Ubuntu.
+- **Debian** is the upstream distribution for Ubuntu. => "Upstream" means Debian is the original source where Ubuntu gets its raw materials (its code and software packages).
 - Uses the **DPKG** package management system with **APT** as the front-end package manager.
 - Widely used for servers, cloud deployments, and development environments.
 - Ubuntu uses the **GNOME** desktop environment by default (since Ubuntu 17.10), but customizes it with its own look and feel.
