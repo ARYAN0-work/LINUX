@@ -2,4 +2,18 @@
 
 - Discuss components of linux distro 
 
-- soon linux installiaion gonna be taught man<topic> commandline use this it will help to teach anything also use documentation and shorthand-> open-source for knowledge also gonna use foo -> for all this you need linux so -> 
+man command
+
+The instructor is saying that instead of memorizing commands, learn how to use the manual pages.
+
+=> example :
+
+man ls
+man mkdir
+man grep
+
+man shows the official documentation for a command.
+
+Think of it as:
+
+Linux's built-in user manual.
