@@ -1,0 +1,101 @@
+# Vi / Vim Editor
+
+## What is Vi?
+
+**Vi** is a powerful terminal-based text editor available on almost every Linux system. It works in different modes, each designed for a specific task.
+
+---
+
+## Vi Modes
+
+### 1. Command Mode (Default)
+- Starts when Vi opens.
+- Used for navigation and editing commands.
+- Keys are treated as commands, **not text**.
+
+### 2. Insert Mode
+- Press `i` to enter Insert Mode.
+- Used to type or edit text.
+- Press `Esc` to return to Command Mode.
+
+### 3. Last-Line (Command-Line) Mode
+- Press `:` from Command Mode.
+- Used to save, quit, search, and execute editor commands.
+- Press `Esc` to return to Command Mode.
+
+---
+
+# Basic Vi Commands
+
+| Command | Description |
+|---------|-------------|
+| `vi myfile` | Open or create `myfile` |
+| `vi -r myfile` | Recover a crashed file |
+| `:r file2` | Insert contents of another file |
+| `:w` | Save current file |
+| `:w filename` | Save as another file |
+| `:w! filename` | Force overwrite file |
+| `:x` or `:wq` | Save and quit |
+| `:q` | Quit |
+| `:q!` | Quit without saving |
+
+---
+
+# Cursor Movement
+
+| Key | Action |
+|-----|--------|
+| Arrow Keys | Move cursor |
+| `h` | Left |
+| `j` | Down |
+| `k` | Up |
+| `l` | Right |
+| `0` | Beginning of line |
+| `$` | End of line |
+| `w` | Next word |
+| `1G` or `:1` | First line |
+| `nG` or `:n` | Go to line *n* |
+| `G` | Last line |
+| `Ctrl + F` | Next page |
+| `Ctrl + B` | Previous page |
+| `Ctrl + L` | Refresh screen |
+
+---
+
+# Search
+
+Search for a word:
+
+```vim
+/pattern
+```
+
+Navigate search results:
+
+| Key | Action |
+|-----|--------|
+| `n` | Next match |
+| `N` | Previous match |
+
+---
+
+# Quick Workflow
+
+```bash
+vi notes.txt
+```
+
+1. Press `i` → Start typing.
+2. Press `Esc` → Return to Command Mode.
+3. Type `:wq` → Save and Exit.
+
+---
+
+## Key Takeaways
+
+- **Command Mode** → Navigation and commands.
+- **Insert Mode** → Write text.
+- **Last-Line Mode (`:`)** → Save, quit, search, and advanced commands.
+- Press **Esc** anytime to return to Command Mode.
+- `:wq` is the most commonly used command to save and exit.
+```
