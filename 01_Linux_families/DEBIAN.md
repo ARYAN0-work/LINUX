@@ -11,31 +11,23 @@ Linux Kernel
       └── Linux Mint
 ```
 
-## Distributions
+# CONFUSION
+- Debian is the main distribution.
+- Ubuntu is built from Debian.
+- Linux Mint is built from Ubuntu (so it's also indirectly based on Debian).
 
-### **Debian**
-- One of the oldest and most stable Linux distributions.
-- Community-driven and known for reliability.
-- Forms the base for many other Linux distributions.
 
-### **Ubuntu**
-- Based on Debian.
-- Developed by Canonical.
-- Beginner-friendly and widely used for desktops, servers, and cloud computing.
-- One of the most popular Linux distributions.
-
-### **Linux Mint**
-- Based on Ubuntu (and indirectly Debian).
-- Designed to be easy for users transitioning from Windows.
-- Provides a polished desktop experience.
 
 ## Package Manager
 
 | Distribution | Package Format | Package Manager |
 |--------------|----------------|-----------------|
-| Debian | `.deb` | `apt` |
-| Ubuntu | `.deb` | `apt` |
-| Linux Mint | `.deb` | `apt` |
+| Debian       | `.deb` | `apt` |
+| Ubuntu       | `.deb` | `apt` |
+| Linux Mint   | `.deb` | `apt` |
+
+- .deb = APK file on Android
+- apt = Play Store that installs and manages those APKs
 
 ## Key Facts
 
@@ -46,25 +38,27 @@ Linux Kernel
 - One of the most popular Linux families.
 - Ubuntu and Linux Mint are based on Debian.
 
-## Relationship
-
-```text
-Linux Kernel
-      │
-      ▼
-    Debian
-      │
-      ├── Ubuntu
-      │      │
-      │      └── Linux Mint
-      │
-      └── Other Debian-based distributions
-```
 
 ## Additional Key Facts About the Debian Family
 
 - **Debian** is the upstream distribution for Ubuntu. => "Upstream" means Debian is the original source where Ubuntu gets its raw materials (its code and software packages).
-- Uses the **DPKG** package management system with **APT** as the front-end package manager.
-- Widely used for servers, cloud deployments, and development environments.
-- Ubuntu uses the **GNOME** desktop environment by default (since Ubuntu 17.10), but customizes it with its own look and feel.
-- Linux Mint uses the **Cinnamon** desktop environment by default and is designed to provide a familiar desktop experience.
+
+- Debian develops software first, and Ubuntu takes that work and builds its own operating system on top of it.
+
+- Simple flow:
+Debian → Ubuntu → Linux Mint
+
+- DPKG vs APT
+dpkg is the low-level package manager that installs .deb files.
+apt is a higher-level tool that uses dpkg in the background and also downloads packages and handles dependencies.
+
+You will mostly use apt. You rarely need to use dpkg directly.
+
+- Desktop Environments
+
+1. A desktop environment is simply the look and feel of Linux (windows, menus, taskbar, icons).
+
+2. Ubuntu → GNOME
+Linux Mint → Cinnamon
+
+This only affects the graphical interface, not the Linux kernel or terminal.
